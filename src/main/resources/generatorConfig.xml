@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <classPathEntry
+            location="/Users/jakoo/.m2/repository/mysql/mysql-connector-java/5.1.21/mysql-connector-java-5.1.21.jar" />
+    <context id="context1" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/ele_employeeInfo?characterEncoding=UTF-8"
+                        userId="root" password="123456" />
+        <javaModelGenerator targetPackage="me.ele.napos.mybatis.model"
+                            targetProject="/Users/jakoo/workspace/mybatis-test/src/main/java" />
+        <sqlMapGenerator targetPackage="mappers"
+                         targetProject="/Users/jakoo/workspace/mybatis-test/src/main/resources" />
+        <javaClientGenerator targetPackage="me.ele.napos.mybatis.dao"
+                             targetProject="/Users/jakoo/workspace/mybatis-test/src/main/java" type="XMLMAPPER" />
+        <table schema="ele_employeeInfo" tableName="ele_user">
+        </table>
+        <table schema="ele_employeeInfo" tableName="ele_shikigami">
+        </table>
+        <table schema="ele_employeeInfo" tableName="ele_keeper">
+        </table>
+    </context>
+</generatorConfiguration>
